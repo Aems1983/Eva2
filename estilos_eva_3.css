@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+ 
+  header {
+    background-color: #777;
+    color: #fff;
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  section:nth-child(odd) {
+    background-color: #f1f1f1;
+    align-items: left;
+  }
+
+  section:nth-child(even) {
+    background-color: #ffffff;
+  }
+  h1{
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    max-width: 800px;
+    text-align: left;
+  }
+
+  form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #555;
+  }
+  ::placeholder{
+    color: black;
+    font-size : 0.9em; 
+    font-style: oblique;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  th,td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .boton {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"] {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    display: block; /* para que ocupe todo el ancho del contenedor */
+    margin: 0 auto; 
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .boton:hover {
+    background-color: #555;
+  }
+}
+
+  /* Estilos para pantallas de hasta 600px de ancho */
+  @media (max-width: 600px) {
+    /* Ajustar el tamaño de las fuentes */
+    body {
+      font-size: 16px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.5rem;
+    }
+    h1{
+      text-align: center;
+    }
+    /* Ajustar el tamaño de la imagen principal */
+    #home img {
+      width: 100%;
+    }
+    /* Ajustar el tamaño de las secciones */
+    section {
+      padding: 20px;
+    }
+    /* Ajustar el ancho de la tabla */
+    table {
+      width: 100%;
+    }
+    /* Ajustar el tamaño de las celdas de la tabla */
+    td, th {
+      padding: 5px;
+      font-size: 1rem;
+    }
+    /* Ajustar el ancho de los botones */
+    .boton {
+      width: 100%;
+    }
+  }
+
